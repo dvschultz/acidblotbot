@@ -17,6 +17,6 @@ CONSUMER_SECRET    = "9GXHQIgldRtrPkjvh6CXYwUoQiUUfgA9gx3mEw3x9ENCuDmSX1"
 OAUTH_TOKEN        = "4661012363-2q0dbtYhg5thrDrl5vUPUhX1mqTTB7m9FNIjgWN"
 OAUTH_TOKEN_SECRET = "	6hcF28Iva5xFyxZUKXD88J3gCsSvyJHlbEFlKIKtKkde4"
 
-# HEROKU_APP_NAME    = "my-bot-test"
-# HEROKU_API_TOKEN   = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-# HEROKU_PROCESS_TYPE= "worker" # (You'd need to change ProcFile too)
+HEROKU_APP_NAME    = "acidblotbot"
+HEROKU_API_TOKEN   = "888ed61a-58f0-40fd-a169-cea7196b623c"
+HEROKU_PROCESS_TYPE= "worker" # (You'd need to change ProcFile too)
