@@ -12,43 +12,43 @@ STOP_PROBABILITY = 1.0 / 4.0
 
 # Bot friends that may receive #bot2bot messages
 BOT_FRIENDS = [ 
-    # 'pixelsorter',
-    # 'badpng',
-    # 'Lowpolybot',
-    # 'JPGglitchbot',
-    # 'imgshredder',
-    # 'a_quilt_bot',
-    # 'cgagraphics',
-    # 'imgblender',
-    # 'imgshear',
+    'pixelsorter',
+    'badpng',
+    'Lowpolybot',
+    'JPGglitchbot',
+    'imgshredder',
+    'a_quilt_bot',
+    'cgagraphics',
+    'imgblender',
+    'imgshear',
     'dvsch'
 ]
 
 # Accounts from which to grab pictures we may send Bot friends
 IMAGE_PROVIDERS = [ #all downcase
-    # 'pixelsorter',
-    # 'lowpolybot',
-    # 'jpgglitchbot',
-    # 'badpng',
-    # 'mm_62_1234_14',
-    # 'vex0rian',
-    # 'imgshredder',
-    # 'cgagraphics',
-    # 'imgblender',
-    # 'imgshear',
-    # 'cloudyconway',
-    # 'fractweet',
-    # 'greatartbot',
-    # 'neoplastibot',
+    'pixelsorter',
+    'lowpolybot',
+    'jpgglitchbot',
+    'badpng',
+    'mm_62_1234_14',
+    'vex0rian',
+    'imgshredder',
+    'cgagraphics',
+    'imgblender',
+    'imgshear',
+    'cloudyconway',
+    'fractweet',
+    'greatartbot',
+    'neoplastibot',
     'dvsch'
 ]
 
 # These are a subset of the above, the bot will grab pictures from their TL
 PASSIVE_PROVIDERS = [
-    # 'cloudyconway',
-    # 'fractweet',
-    # 'greatartbot',
-    # 'neoplastibot',
+    'cloudyconway',
+    'fractweet',
+    'greatartbot',
+    'neoplastibot',
     'dvsch'
 ]
 
@@ -284,7 +284,7 @@ class Content
         img = (Magick::Image.read(original))[0]
         #dont overblur image. make it relative to image size
         size = (img.rows < img.columns) ? (img.rows/10.0) : (img.columns/10.0);
-        rndBlur = Random.rand(10.0..size)
+        rndBlur = Random.rand(6.0..size)
         rndP = Random.rand(2..4)
         newImg = img.blur_image(0.0,rndBlur).posterize(rndP,false)
         newImg.write(target)
