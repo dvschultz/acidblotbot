@@ -1,6 +1,6 @@
 # encoding: UTF-8
 require 'open-uri'
-require 'RMagick'
+require 'rmagick'
 
 QUEUE_DELAY = 55..90
 
