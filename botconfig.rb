@@ -1,5 +1,5 @@
-BOT_OWNER = 'your-twitter-user-name'
-TWITTER_USERNAME = "test245632" # Ebooks account username
+BOT_OWNER = 'dvsch'
+TWITTER_USERNAME = "acidblotbot" # Ebooks account username
 
 AUTO_FOLLOW_BACK = false
 
