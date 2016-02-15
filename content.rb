@@ -20,8 +20,7 @@ BOT_FRIENDS = [
     'a_quilt_bot',
     'cgagraphics',
     'imgblender',
-    'imgshear',
-    'dvsch'
+    'imgshear'
 ]
 
 # Accounts from which to grab pictures we may send Bot friends
@@ -40,7 +39,8 @@ IMAGE_PROVIDERS = [ #all downcase
     'fractweet',
     'greatartbot',
     'neoplastibot',
-    'dvsch'
+    'dvsch',
+    'youtubeartifact'
 ]
 
 # These are a subset of the above, the bot will grab pictures from their TL
@@ -49,7 +49,8 @@ PASSIVE_PROVIDERS = [
     'fractweet',
     'greatartbot',
     'neoplastibot',
-    'dvsch'
+    'dvsch',
+    'youtubeartifact'
 ]
 
 # Many of those accounts above send good pictures but replying them with flipped
