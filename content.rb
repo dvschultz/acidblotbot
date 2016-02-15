@@ -150,7 +150,7 @@ PICTURE_READY = [
     # "I can detect a 20% good taste improvement after processing.",
     # "Hahahahahahahaha",
     # "What a waste of time.",
-    ""
+    "Hi"
 ]
 
 # Things the bot will say when it decides not to process an image. (In case of
@@ -192,7 +192,7 @@ NOT_NOW = [
     # "Whoops",
     # "Have you tried talking to humans instead?",
     # "I only process good images, sorry.",    
-    "not now"
+    "Sorry, I can’t process an image from you right now. Please try again later."
 ]
 
 # When the bot shows a picture to another bot, it will credit whoever provided
@@ -282,6 +282,8 @@ class Content
     # replace this and we can make the bot do anything.
     def process_image(original, target)
         img = (Magick::Image.read(original))[0]
+        size = (img.rows < img.columns) ? img.rows : img.columns;
+        puts size;
         # img.flip!
         # newImg = img.blur_image(100.0,1.0).posterize(4,false)
         newImg = img.blur_image(0.0,50.0).posterize(2,false)
