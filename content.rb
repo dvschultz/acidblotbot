@@ -283,9 +283,8 @@ class Content
     def process_image(original, target)
         img = (Magick::Image.read(original))[0]
         # img.flip!
-        img.blur_image(2.0,1.0)
-        img.posterize(4,false)
-        img.write(target)
+        newImg = img.blur_image(100.0,1.0).posterize(4,false)
+        newImg.write(target)
     end
 
     def tweet_response(tweet, text, lim)
