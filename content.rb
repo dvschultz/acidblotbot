@@ -283,7 +283,7 @@ class Content
     def process_image(original, target)
         img = (Magick::Image.read(original))[0]
         #dont overblur image. make it relative to image size
-        size = (img.rows < img.columns) ? (img.rows/10.0) : (img.columns/10.0);
+        size = (img.rows < img.columns) ? (img.rows/12.0) : (img.columns/12.0);
         rndBlur = Random.rand(6.0..size)
         rndP = Random.rand(2..4)
         newImg = img.blur_image(0.0,rndBlur).posterize(rndP,false)
