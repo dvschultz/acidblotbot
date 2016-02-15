@@ -12,10 +12,10 @@
 # (The security risk is that if anyone finds this file they'll gain total access to
 #   your bot and even your heroku, you don't want that)
 
-CONSUMER_KEY       = "xxxxxxxxxxxxxxxxxxxxxxxxx"
-CONSUMER_SECRET    = "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
-OAUTH_TOKEN        = "0000000000-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
-OAUTH_TOKEN_SECRET = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+CONSUMER_KEY       = "bqYt56ZN3fUWPXexBIw8Fb8Ms"
+CONSUMER_SECRET    = "9GXHQIgldRtrPkjvh6CXYwUoQiUUfgA9gx3mEw3x9ENCuDmSX1"
+OAUTH_TOKEN        = "4661012363-2q0dbtYhg5thrDrl5vUPUhX1mqTTB7m9FNIjgWN"
+OAUTH_TOKEN_SECRET = "	6hcF28Iva5xFyxZUKXD88J3gCsSvyJHlbEFlKIKtKkde4"
 
 HEROKU_APP_NAME    = "my-bot-test"
 HEROKU_API_TOKEN   = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
