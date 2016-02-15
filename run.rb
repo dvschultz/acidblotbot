@@ -3,7 +3,7 @@
 
 require_relative 'botconfig'
 
-ignore_schedule = true
+ignore_schedule = ARGV.include?"--ignore-schedule"
 if ignore_schedule
     IGNORE_SCHEDULE = true
     puts "Will ignore schedule."
