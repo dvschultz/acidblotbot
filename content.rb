@@ -283,7 +283,8 @@ class Content
     def process_image(original, target)
         img = (Magick::Image.read(original))[0]
         # img.flip!
-        newImg = img.blur_image(100.0,1.0).posterize(4,false)
+        # newImg = img.blur_image(100.0,1.0).posterize(4,false)
+        newImg = img.blur_image(0.0,4.0).posterize(6,false)
         newImg.write(target)
     end
 
