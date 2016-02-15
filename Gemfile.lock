@@ -49,6 +49,7 @@ GEM
     platform-api (0.5.0)
       heroics
     redis (3.2.2)
+    rmagick (2.15.4)
     rufus-scheduler (3.2.0)
     simple_oauth (0.2.0)
     tweetstream (2.6.0)
@@ -78,6 +79,7 @@ PLATFORMS
 
 DEPENDENCIES
   platform-api
+  rmagick
   twitter_ebooks (~> 2.3.2)
 
 BUNDLED WITH
