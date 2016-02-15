@@ -285,9 +285,9 @@ class Content
         #dont overblur image. make it relative to image size
         size = (img.rows < img.columns) ? (img.rows/10.0) : (img.columns/10.0);
         puts "size: #{size}"
-        rndBlur.rand(10.0..size)
+        rndBlur = Random.rand(10.0..size)
         puts "blur: #{rndBlur}"
-        rndP.rand(2..5)
+        rndP = Random.rand(2..5)
         puts "poserize: #{rndP}"
         newImg = img.blur_image(0.0,rndBlur).posterize(rndP,false)
         newImg.write(target)
