@@ -20,7 +20,8 @@ BOT_FRIENDS = [
     'a_quilt_bot',
     'cgagraphics',
     'imgblender',
-    'imgshear'
+    'imgshear',
+    'kaleid_o_bot'
 ]
 
 # Accounts from which to grab pictures we may send Bot friends
