@@ -284,11 +284,8 @@ class Content
         img = (Magick::Image.read(original))[0]
         #dont overblur image. make it relative to image size
         size = (img.rows < img.columns) ? (img.rows/10.0) : (img.columns/10.0);
-        puts "size: #{size}"
         rndBlur = Random.rand(10.0..size)
-        puts "blur: #{rndBlur}"
-        rndP = Random.rand(2..5)
-        puts "poserize: #{rndP}"
+        rndP = Random.rand(2..4)
         newImg = img.blur_image(0.0,rndBlur).posterize(rndP,false)
         newImg.write(target)
     end
