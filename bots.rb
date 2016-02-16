@@ -347,7 +347,7 @@ class GenBot
       if tw == nil
           # if text is nil  then content is not ready , wait for another chance
           @last_tweeted = MAX_TWEET_PERIOD + 1
-          @bot.log "tweet: Waiting for content."
+          # @bot.log "tweet: Waiting for content."
       else
           if tw.is_a? String
               tw = [ [tw] ]
