@@ -8,7 +8,7 @@ PICTURE_LINK_LENGTH = 23
 
 MIN_USER_REPLIES = 3
 MAX_USER_REPLIES = 10
-STOP_PROBABILITY = 1.0 / 4.0
+STOP_PROBABILITY = 1.0 / 6.0
 
 # Bot friends that may receive #bot2bot messages
 BOT_FRIENDS = [ 
@@ -21,7 +21,8 @@ BOT_FRIENDS = [
     'cgagraphics',
     'imgblender',
     'imgshear',
-    'kaleid_o_bot'
+    'kaleid_o_bot',
+    'plaidbot'
 ]
 
 # Accounts from which to grab pictures we may send Bot friends
@@ -152,7 +153,10 @@ PICTURE_READY = [
     # "I can detect a 20% good taste improvement after processing.",
     # "Hahahahahahahaha",
     # "What a waste of time.",
-    "Hi"
+    "Hi",
+    "Woooooaaaaahhhhhhh",
+    "Dude, far out",
+    "Am I seeing things?"
 ]
 
 # Things the bot will say when it decides not to process an image. (In case of
@@ -214,7 +218,7 @@ CREDIT = [
     # "Credit",
     # "Comrade in this noble task:",
     # "I am a picture thief",
-    ""
+    "Thanks"
 ]
 
 OpenURI::Buffer.send :remove_const, 'StringMax' if OpenURI::Buffer.const_defined?('StringMax')
