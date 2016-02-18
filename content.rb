@@ -43,7 +43,8 @@ IMAGE_PROVIDERS = [ #all downcase
     'neoplastibot',
     'dvsch',
     'youtubeartifact',
-    'FFD8FFDB'
+    'FFD8FFDB',
+    'throwingpixels'
 ]
 
 # These are a subset of the above, the bot will grab pictures from their TL
@@ -54,7 +55,8 @@ PASSIVE_PROVIDERS = [
     'neoplastibot',
     'dvsch',
     'youtubeartifact',
-    'FFD8FFDB'
+    'FFD8FFDB',
+    'throwingpixels'
 ]
 
 # Many of those accounts above send good pictures but replying them with flipped
@@ -291,7 +293,7 @@ class Content
     def process_image(original, target)
         img = (Magick::Image.read(original))[0]
         #dont overblur image. make it relative to image size
-        size = (img.rows < img.columns) ? (img.rows/12.0) : (img.columns/12.0);
+        size = (img.rows < img.columns) ? (img.rows/15.0) : (img.columns/15.0);
         rndBlur = Random.rand(6.0..size)
         rndP = Random.rand(2..3)
         newImg = img.blur_image(0.0,rndBlur).posterize(rndP,false)
