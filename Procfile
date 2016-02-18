@@ -1,1 +1,1 @@
-worker: ruby run.rb
+worker: ruby run.rb --ignore-schedule

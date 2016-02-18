@@ -40,13 +40,7 @@ SPECIAL_MESSAGES_SCHEDULE = [
 # A function to decide when to go to sleep (only used 
 # if the bot is in heroku and the scheduler is setup)
 def should_it_be_on()
-    h = Time.new.gmtime.hour  # normally we base it upon the UTC hour value
-    
-    if 6 <= h && h < 12      #from 6 UTC to 12 UTC
-        return false
-    else
-        return true
-    end
+    return true
 end
 
 # probability to reset the bot at a given minute.
