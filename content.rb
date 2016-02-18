@@ -422,20 +422,20 @@ class Content
 
     def make_tweets(lim, special)
         # This just returns a tweet for the bot to make.
-        if @disabled
-            puts "Tweet disabled"
-            return nil
-        end
-        if special == :good_night
-            @disabled = true            
-            msg = pick_with_limit(GOOD_NIGHT, lim - PICTURE_LINK_LENGTH)
-            return [ [ msg, File.new(STOP_PICTURE) ] ]
-        end
-        if special == :good_morning
-            @disabled = false
-            msg = pick_with_limit(GOOD_MORNING, lim - PICTURE_LINK_LENGTH)
-            return [ [ GOOD_MORNING, File.new(START_PICTURE) ] ]
-        end
+        # if @disabled
+        #     puts "Tweet disabled"
+        #     return nil
+        # end
+        # if special == :good_night
+        #     @disabled = true            
+        #     msg = pick_with_limit(GOOD_NIGHT, lim - PICTURE_LINK_LENGTH)
+        #     return [ [ msg, File.new(STOP_PICTURE) ] ]
+        # end
+        # if special == :good_morning
+        #     @disabled = false
+        #     msg = pick_with_limit(GOOD_MORNING, lim - PICTURE_LINK_LENGTH)
+        #     return [ [ GOOD_MORNING, File.new(START_PICTURE) ] ]
+        # end
         
         f = get_friend
         @good_replies[f.downcase] = 0
