@@ -42,7 +42,8 @@ IMAGE_PROVIDERS = [ #all downcase
     'greatartbot',
     'neoplastibot',
     'dvsch',
-    'youtubeartifact'
+    'youtubeartifact',
+    'FFD8FFDB'
 ]
 
 # These are a subset of the above, the bot will grab pictures from their TL
@@ -52,7 +53,8 @@ PASSIVE_PROVIDERS = [
     'greatartbot',
     'neoplastibot',
     'dvsch',
-    'youtubeartifact'
+    'youtubeartifact',
+    'FFD8FFDB'
 ]
 
 # Many of those accounts above send good pictures but replying them with flipped
