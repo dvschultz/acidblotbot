@@ -298,6 +298,7 @@ class Content
         rndP = Random.rand(2..3)
         rndMod = Random.rand(1.0)
         newImg = img.blur_image(0.0,rndBlur).posterize(rndP,false).modulate(100.0,100.0,rndMod)
+        # image.colorspace == Magick::SRGBColorspace
         newImg.write(target)
     end
 
