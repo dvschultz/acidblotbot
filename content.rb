@@ -296,7 +296,8 @@ class Content
         size = (img.rows < img.columns) ? (img.rows/15.0) : (img.columns/15.0);
         rndBlur = Random.rand(6.0..size)
         rndP = Random.rand(2..3)
-        rndMod = Random.rand(0.0..1.0)
+        rndMod = Random.rand(1.0)
+        puts rndMod
         newImg = img.blur_image(0.0,rndBlur).posterize(rndP,false)
         newImg.colorspace = HSLColorspace
         newImg.modulate(0,0,rndMod)
