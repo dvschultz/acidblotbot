@@ -298,9 +298,7 @@ class Content
         rndP = Random.rand(2..3)
         rndMod = Random.rand(1.0)
         puts rndMod
-        newImg = img.blur_image(0.0,rndBlur).posterize(rndP,false)
-        newImg.colorspace = HSLColorspace
-        newImg.modulate(0,0,rndMod)
+        newImg = img.blur_image(0.0,rndBlur).posterize(rndP,false).modulate(0,0,rndMod)
         newImg.write(target)
     end
 
